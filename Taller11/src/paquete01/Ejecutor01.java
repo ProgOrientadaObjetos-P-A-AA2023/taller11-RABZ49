@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package paquete01;
-
+import java.util.ArrayList;
+import java.util.List;
+import paquete02.*;
 /**
  *
  * @author reroes
@@ -16,6 +18,39 @@ public class Ejecutor01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+         List<Menu> lista = new ArrayList<>();
+        
+        MenuNiños menuNiños01 = 
+                new MenuNiños(1, 1.5, "Niños 01",2);
+        menuNiños01.calcularValorMenu();
+        lista.add(menuNiños01);
+        
+        MenuNiños menuNiños02 = 
+                new MenuNiños(1, 1.5, "Niños 02",3);
+        menuNiños02.calcularValorMenu();
+        lista.add(menuNiños02);
+        
+        MenuEco menuEconomico01 = 
+                new MenuEco(25, "Econo 001", 4);
+        menuEconomico01.calcularValorMenu();
+        lista.add(menuEconomico01);
+        
+        MenuDia menuDia01 = 
+                new MenuDia(1, 1, "Dia 001", 5);
+        menuDia01.calcularValorMenu();
+        lista.add(menuDia01);
+        
+        MenuC menuCarta01 =
+                new MenuC(1.5, 2, 10, "Carta001",6);
+        menuCarta01.calcularValorMenu();
+        lista.add(menuCarta01);
+        
+        CuentaF cuenta01 = new CuentaF("René Elizalde", lista, 
+                10);
+        cuenta01.calcularValorSubtotal();
+        cuenta01.calcularValorTotal();
+        
+        System.out.println(cuenta01);
     }
     
     
