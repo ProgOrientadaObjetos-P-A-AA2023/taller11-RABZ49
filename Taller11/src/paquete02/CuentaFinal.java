@@ -10,14 +10,14 @@ import java.util.List;
  *
  * @author busta
  */
-public class CuentaF {
+public class CuentaFinal {
         private String nombreCliente;
     private List<Menu> menus;
     private double valorTotal;
     private double valorSubtotal;
     private double valorIva;
 
-    public CuentaF(String nomClie, List<Menu> men, double valIv) {
+    public CuentaFinal(String nomClie, List<Menu> men, double valIv) {
         nombreCliente = nomClie;
         menus = men;
         valorIva = valIv;

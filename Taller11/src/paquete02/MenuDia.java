@@ -13,10 +13,10 @@ public class MenuDia extends Menu {
     private double valorPos;
     private double valorBebi;
 
-    public MenuDia(double valorPos, double valorBebi, String nombreP, double valorIni) {
+    public MenuDia(double valorPo, double valorBeb, String nombreP, double valorIni) {
         super(nombreP, valorIni);
-        valorPos = valorPos;
-        valorBebi = valorBebi;
+        valorPos = valorPo;
+        valorBebi = valorBeb;
     }
 
     

@@ -8,18 +8,18 @@ package paquete02;
  *
  * @author busta
  */
-public class MenuC extends Menu{
+public class MenuCarta extends Menu{
     
     private double valorGuarnicion;
     private double valorBebida;
-    private double porcentajeAña;
+    private double porcentajeAdd;
 
-    public MenuC(double valGu, double valBe, double porcAñ,
+    public MenuCarta(double valGu, double valBe, double porcadd,
             String nomP, double valIni) {
         super(nomP, valIni);
         valorGuarnicion = valGu;
         valorBebida = valBe;
-        porcentajeAña = porcAñ;
+        porcentajeAdd = porcadd;
     }
 
     public double obtenerValorGuarnicion() {
@@ -39,16 +39,16 @@ public class MenuC extends Menu{
     }
 
     public double obtenerPorcentajeAña() {
-        return porcentajeAña;
+        return porcentajeAdd;
     }
 
     public void establecerPorcentajeAña(double x) {
-        porcentajeAña = x;
+        porcentajeAdd = x;
     }
 
     @Override
     public void calcularValorMenu() {
-        double add = (valorIniciM * porcentajeAña)/100;
+        double add = (valorIniciM * porcentajeAdd)/100;
         valorMenu = valorIniciM + valorBebida + valorGuarnicion + add;
     }
 
@@ -64,7 +64,7 @@ public class MenuC extends Menu{
                 valorIniciM,
                 valorGuarnicion,
                 valorBebida,
-                porcentajeAña,
+                porcentajeAdd,
                 valorMenu);
         return x;
     }

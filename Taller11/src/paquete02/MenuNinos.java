@@ -8,12 +8,12 @@ package paquete02;
  *
  * @author busta
  */
-public class MenuNiños extends Menu {
+public class MenuNinos extends Menu {
 
     private double valorHelado;
     private double valorPastel;
 
-    public MenuNiños(double valHel, double valPas, String nomP,
+    public MenuNinos(double valHel, double valPas, String nomP,
             double valInM) {
         super(nomP, valInM);
         valorHelado = valHel;

@@ -6,12 +6,12 @@
 package paquete01;
 
 import java.util.ArrayList;
-import paquete02.CuentaF;
+import paquete02.CuentaFinal;
 import paquete02.Menu;
-import paquete02.MenuC;
+import paquete02.MenuCarta;
 import paquete02.MenuDia;
 import paquete02.MenuEco;
-import paquete02.MenuNiños;
+import paquete02.MenuNinos;
 
 public class Ejecutor02 {
 
@@ -72,8 +72,8 @@ public class Ejecutor02 {
                         break;
                 }
             }
-            MenuNiños menuNiños
-                    = new MenuNiños(valHelado, valPastel,
+            MenuNinos menuNiños
+                    = new MenuNinos(valHelado, valPastel,
                             nombrePlato, valInicial);
             lista.add(menuNiños);
         }
@@ -144,8 +144,8 @@ public class Ejecutor02 {
                         break;
                 }
             }
-            MenuC menuCarta
-                    = new MenuC(valGuarnicion, valBebidaCarta,
+            MenuCarta menuCarta
+                    = new MenuCarta(valGuarnicion, valBebidaCarta,
                             porcentajeAd, nombrePlato,
                             valInicial);
             lista.add(menuCarta);
@@ -157,7 +157,7 @@ public class Ejecutor02 {
         }
 
         // Un objeto de tipo Cuenta
-        CuentaF miCuenta = new CuentaF("Roberto Bustamante", lista, 12);
+        CuentaFinal miCuenta = new CuentaFinal("Roberto Bustamante", lista, 12);
         miCuenta.calcularValorSubtotal();
         miCuenta.calcularValorTotal();
         System.out.printf("%s\n", miCuenta);

@@ -20,15 +20,15 @@ public class Ejecutor01 {
         // TODO code application logic here
          List<Menu> lista = new ArrayList<>();
         
-        MenuNiños menuNiños01 = 
-                new MenuNiños(1, 1.5, "Niños 01",2);
-        menuNiños01.calcularValorMenu();
-        lista.add(menuNiños01);
+        MenuNinos menuNinos01 = 
+                new MenuNinos(1, 1.5, "Niños 01",2);
+        menuNinos01.calcularValorMenu();
+        lista.add(menuNinos01);
         
-        MenuNiños menuNiños02 = 
-                new MenuNiños(1, 1.5, "Niños 02",3);
-        menuNiños02.calcularValorMenu();
-        lista.add(menuNiños02);
+        MenuNinos menuNinos02 = 
+                new MenuNinos(1, 1.5, "Niños 02",3);
+        menuNinos02.calcularValorMenu();
+        lista.add(menuNinos02);
         
         MenuEco menuEconomico01 = 
                 new MenuEco(25, "Econo 001", 4);
@@ -40,12 +40,12 @@ public class Ejecutor01 {
         menuDia01.calcularValorMenu();
         lista.add(menuDia01);
         
-        MenuC menuCarta01 =
-                new MenuC(1.5, 2, 10, "Carta001",6);
+        MenuCarta menuCarta01 =
+                new MenuCarta(1.5, 2, 10, "Carta001",6);
         menuCarta01.calcularValorMenu();
         lista.add(menuCarta01);
         
-        CuentaF cuenta01 = new CuentaF("René Elizalde", lista, 
+        CuentaFinal cuenta01 = new CuentaFinal("René Elizalde", lista, 
                 10);
         cuenta01.calcularValorSubtotal();
         cuenta01.calcularValorTotal();
